@@ -73,6 +73,7 @@ int main() {
     }
      
     vector<vector<char>> board(n, (vector<char>(n, '.')));
+    cout << "Enter the board" << endl;
     for (int i = 0; i < 9; i++) {
         for (int j = 0; j < 9; j++) {
             cin >> board[i][j];
