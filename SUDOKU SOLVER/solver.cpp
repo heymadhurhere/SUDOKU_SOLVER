@@ -80,6 +80,12 @@ int main() {
     }
     if (!isValid(board)) {
         cout << "Check your sudoku as it is not valid" << endl;
+        return 0;
+    }
+
+    if (!solve(board)) {
+        cout << "No solution exists" << endl;
+        return 0;
     }
 
     solve(board);
